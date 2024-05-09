@@ -44,6 +44,6 @@
 
 Ответ:
 
-Прочитал файл syslogи распарсил его с помощью logstash:
+Прочитал файл syslog и распарсил его с помощью logstash:
 
 ![Парсинг syslog](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task5-syslog.png)

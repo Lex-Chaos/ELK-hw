@@ -6,7 +6,7 @@
 
 Установил elasticsearc, поменял параметр cluster_name:
 
-![elasticsearc](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task1-elasticsearc.png)
+![elasticsearc](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task1-elasticsearch.png)
 
 ---
 

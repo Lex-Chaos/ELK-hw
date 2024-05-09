@@ -1,26 +1,12 @@
-# Домашняя работа к занятию «Disasters recovery и Keepalived» - Боровик А. А.
+# Домашняя работа к занятию «ELK» - Боровик А. А.
 
 ### Задание 1
 
 Ответ:
 
-Настройка роутера 1
+Установил elasticsearc, поменял параметр cluster_name:
 
-![Настройка роутера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Настройка_для_роутера_1.png)
-
-Результат настройки роутера 1
-
-![Результат настройки роутера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Результат_настройки_для_роутера_1.png)
-
-Настройка роутера 2
-
-![Настройка роутера 2](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Настройка_для_роутера_2.png)
-
-Результат настройки роутера 2
-
-![Результат настройки роутера 2](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Результат_настройки_для_роутера_2.png)
-
-[Ссылка на файл для CPT](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/hsrp_advanced_ready.pkt)
+![elasticsearc](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task1-elasticsearc.png)
 
 ---
 
@@ -28,39 +14,36 @@
 
 Ответ:
 
-Скрипт проверки сервера Nginx:
-[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/check_nginx.sh)
+Установил kibana:
 
-Конфигурационный файл keepalived:
-[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/keepalived.conf)
-
-Сервер работает без сбоев:
-![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Normal_working.png)
-
-Отсутствует файл index.html:
-![Отсутствует файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Delete_index.png)
-
-Закрыт порт:
-![Работа без сбоев](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task2_Close_port.png)
+![kibana](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task2-kibana.png)
 
 ---
 
-### Задание 3*
+### Задание 3
 
 Ответ:
 
-Скрипт для определения коэффициента:
-[Ссылка на файл скрипта](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_balance_load.sh)
+Установил logstash, прочитал логи nginx:
 
-Конфигурационный файл keepalived:
-[Ссылка на конфигурационный файл](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/files/Task3_keepalived.conf)
+![logstash](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task3-logstash.png)
 
-Файлы для серверов отличаются только состоянием MASTER - BACKUP и приоритетом.
-Лог сервера 1:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server1.png)
+---
 
-Лог сервера 2:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server2.png)
+### Задание 4
 
-Лог сервера 3:
-![Лог сервера 1](https://github.com/Lex-Chaos/disasters_recovery_and_keepalived-hw/blob/main/img/Task3_server3.png)
+Ответ:
+
+Установил filebeat, прочитал логи nginx:
+
+![filebeat](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task4-filebeat.png)
+
+---
+
+### Задание 5*
+
+Ответ:
+
+Прочитал файл syslogи распарсил его с помощью logstash:
+
+![Парсинг syslog](https://github.com/Lex-Chaos/ELK-hw/blob/main/img/task5-syslog.png)
